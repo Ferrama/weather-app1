@@ -1,0 +1,108 @@
+ .card {
+  
+  height: 16rem;
+  width: 20rem;
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Marcellus', serif
+}
+.card:hover {
+  opacity: 1;
+  box-shadow:
+1px 1px #f2f6f8,
+1px 1px #f2f6f8,
+1px 1px #f2f6f8;
+-webkit-transform: translateX(-2px);
+transform: translateX(-2px);
+}
+
+
+/* .card-title {
+ 
+} */
+.div-inf{
+  display: flex;
+  height: 45%;
+}
+.temp-details{
+  width: 50%;
+}
+
+#closeIcon {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-left: 10px; 
+  border-radius: 15px;
+  
+}
+.closeButton {
+  position: absolute;
+  right: 0.4rem;
+  top: 0.4rem;
+  font-size: 1rem;
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.25rem;
+
+  border-radius: 9999px;
+  
+  border-width: 1px;
+  border-color:transparent;
+  background-color: transparent;
+
+  transition: 250ms;
+}
+
+.closeButton:hover {
+  color: #e63946;
+  background-color: var(--btn-danger-color);
+  
+  border-color: #e63946 ;
+
+}
+
+.card-body {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+.div-img{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center
+  
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+
+
+#heading {
+    font-size: 55px;
+    color: #2b304d
+}
+
+.temp {
+    place-items: center
+}
+
+.temp-details>p>span,
+.grey {
+    color: #a3acc1;
+    font-size: 12px
+}
+
+.fa {
+    color: #a5a5b1
+}
+
+*:focus {
+    outline: none
+}

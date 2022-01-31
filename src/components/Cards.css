@@ -1,0 +1,22 @@
+.cards {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap:1rem;
+  
+ justify-items: center;
+  
+}
+@media screen and (min-width: 500px) {
+  .cards { grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: repeat(auto, 1fr);}
+}
+@media screen and (min-width: 700px) {
+  .cards { grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(auto, 1fr);}
+}
+@media screen and (min-width: 1000px) {
+  .cards { grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);}
+}
+

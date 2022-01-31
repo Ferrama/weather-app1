@@ -1,0 +1,42 @@
+.App {
+  background-image: linear-gradient(
+    180deg,
+    #ffb629 0,
+    #ffa537 10%,
+    #ff9243 20%,
+    #ff7e4b 30%,
+    #ff6951 40%,
+    #f25353 50%,
+    #d93f53 60%,
+    #c22f54 70%,
+    #ad2355 80%,
+    #9b1b56 90%,
+    #8c1859 100%
+  );
+  background-repeat: no-repeat;
+    background-size: cover;
+    min-height : 100vh;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: center;
+ 
+  width: 100%;
+
+  
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+logica cambiar el fondo de la imagen del
+
+
+let imgSelector = 'i'+({img}.img);
+
+<div className = {styles.cardBox +' ' +styles[imgSelector]}  >
+
+
+*/
