@@ -50,18 +50,18 @@ export default function Card({
       </div>
       <div class="div-inf">
         <div class="temp-details">
-          <p class="my-1">
+          <p class="">
             {" "}
-            <img src={Viento} height="35px" alt="img" /> <span> {wind} </span>{" "}
+            <img src={Viento} height="30px" alt="img" /> <span> {wind} </span>{" "}
           </p>
           <p class="my-1">
             {" "}
-            <img src={Humedad} aria-hidden="true" height="35px" alt="img"/>{" "}
+            <img src={Humedad} aria-hidden="true" height="30px" alt="img"/>{" "}
             <span> 84% </span>{" "}
           </p>
           <p class="my-1">
             {" "}
-            <img src={Max} height="35px" alt="img"/> <span> {max} </span>{" "}
+            <img src={Max} height="30px" alt="img"/> <span> {max} </span>{" "}
           </p>
         </div>
         <div className="div-img">
