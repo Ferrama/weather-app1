@@ -41,7 +41,7 @@ export default function Card({
       </div>
       <div class="d-flex flex-column temp ">
         <h1 class="mb-0 font-weight-bold" id="heading">
-          {temp}
+          {temp} °
         </h1>{" "}
         <span class="small grey" value={id} onClick={(e) => handleClick(e)}>
           {" "}
