@@ -39,7 +39,7 @@ export default function Card({
           </button>
         </div>
       </div>
-      <div class="d-flex flex-column temp mt-2 mb-2">
+      <div class="d-flex flex-column temp mt-2">
         <h1 class="mb-0 font-weight-bold" id="heading">
           {temp}
         </h1>{" "}
