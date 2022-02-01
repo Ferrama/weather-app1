@@ -39,7 +39,7 @@ export default function Card({
           </button>
         </div>
       </div>
-      <div class="d-flex flex-column temp mt-2">
+      <div class="d-flex flex-column temp ">
         <h1 class="mb-0 font-weight-bold" id="heading">
           {temp}
         </h1>{" "}
@@ -50,18 +50,18 @@ export default function Card({
       </div>
       <div class="div-inf">
         <div class="temp-details">
-          <p class="">
+          <p class="my-0">
             {" "}
-            <img src={Viento} height="30px" alt="img" /> <span> {wind} </span>{" "}
+            <img src={Viento} height="35px" alt="img" /> <span> {wind} </span>{" "}
           </p>
-          <p class="my-1">
+          <p class="my-0">
             {" "}
-            <img src={Humedad} aria-hidden="true" height="30px" alt="img"/>{" "}
+            <img src={Humedad} aria-hidden="true" height="35px" alt="img"/>{" "}
             <span> 84% </span>{" "}
           </p>
           <p class="my-1">
             {" "}
-            <img src={Max} height="30px" alt="img"/> <span> {max} </span>{" "}
+            <img src={Max} height="35px" alt="img"/> <span> {max} </span>{" "}
           </p>
         </div>
         <div className="div-img">

@@ -25,7 +25,7 @@ export default function Ciudad({ city, setShowModalAdd }) {
             <div className="temperatura">
               <img src={Temperatura} alt="" height="50px" />
               <div>
-                 {city.max} - ${city.min} ºC
+                 {city.max} - {city.min} ºC
               </div>
             </div>
             <div className="viento">
