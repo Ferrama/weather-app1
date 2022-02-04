@@ -43,7 +43,7 @@ export default function Card({
         <h1 class="mb-0 font-weight-bold" id="heading">
           {temp} °
         </h1>{" "}
-        <span class="small grey" value={id} onClick={(e) => handleClick(e)}>
+        <span class="small grey" id="detail-button" value={id} onClick={(e) => handleClick(e)}>
           {" "}
           Ver Detalles
         </span>

@@ -4,14 +4,13 @@ import Ciudad from "./components/Ciudad.jsx";
 import About from "./components/About.jsx";
 
 import React, { useState } from "react";
-import { Route , Switch} from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
 
 function App() {
   const [cities, setCities] = useState([]);
   let [showModalAdd, setShowModalAdd] = useState(false);
   let [cityCard, setCityCard] = useState();
-  
 
   function onSearch(ciudad) {
     const apiKey = "8a19b5e768f5491a8493d4350e5b11e4";
@@ -34,13 +33,15 @@ function App() {
             latitud: recurso.coord.lat,
             longitud: recurso.coord.lon,
           };
-          setCities((oldCities) => [...oldCities, ciudad]);
+          if (!cities.some((city) => city.id === ciudad.id)) {
+            setCities((oldCities) => [...oldCities, ciudad]);
+          }
         } else {
           alert("Ciudad no encontrada");
         }
       });
 
-    // SE PUEDE HACER UNA FUNCION CON FIND  QUE SI DETECTA UNA CIUDAD NO LA VUELVE A CARGAR
+    
   }
 
   function onClose(id) {
@@ -60,22 +61,20 @@ function App() {
     <div className="App">
       <Route path="/" render={() => <Nav onSearch={onSearch} />} />
 
-<Switch>
-      <Route exact path="/about" component={About} />
+      <Switch>
+        <Route exact path="/about" component={About} />
 
-      <Route
-        path="/"
-        render={() => (
-          <Cards
-            cities={cities}
-            onClose={onClose}
-            setShowModalAdd={setShowModalAdd}
-            setCityCard={setCityCard}
-          />
-        )}
-      />
-
-      
+        <Route
+          path="/"
+          render={() => (
+            <Cards
+              cities={cities}
+              onClose={onClose}
+              setShowModalAdd={setShowModalAdd}
+              setCityCard={setCityCard}
+            />
+          )}
+        />
       </Switch>
       {showModalAdd && (
         <Ciudad city={onFilter(cityCard)} setShowModalAdd={setShowModalAdd} />

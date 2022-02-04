@@ -106,3 +106,7 @@ transform: translateX(-2px);
 *:focus {
     outline: none
 }
+#detail-button:hover{
+  cursor: pointer;
+
+}
